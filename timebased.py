@@ -1,10 +1,13 @@
 import socket
 import json
+import time
 from datetime import datetime
 from sys import argv
-import time
+from string import ascii_letters, digits
 
-options = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890'
+
+
+options = ascii_letters + digits
 host = argv[1]
 port = int(argv[2])
 
